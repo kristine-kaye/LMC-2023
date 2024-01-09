@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("kaye.JPG");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 625px;
+    }
+
+
+
+    .wrapper {
+        margin-top: 1vh;
+        background-color: transparent;
+        box-shadow: 0vh 1vh 2vh 0.1vh black;
+        width: 420px;
+        height: 450px;
+        border-radius: 5vh;
+        border: 2px solid rgba(255, 255, 255, .2);
+        backdrop-filter: blur(2px);
+        color: black;
+    }
+
+
+    h1 {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        margin-top: 8vh;
+        text-align: center;
+        margin-bottom: 4.5vh;
+        font-size: 8vh;
+        color: yellow;
+
+    }
+
+
+    input[type='text'],
+    input[type='password'],
+    button {
+        margin-top: 2.5vh;
+        margin-bottom: .5vh;
+        margin-left: 2.5vw;
+        width: 25vw;
+        height: 5vh;
+        font-size: 3vh;
+        border-radius: 10px;
+    }
+
+    input[type='checkbox'] {
+        margin-left: 3vw;
+        margin-right: 1vw;
+        width: 2vh;
+        height: 2vh;
+        margin-top: 5vh;
+        margin-bottom: 2.5vh;
+    }
+
+    label {
+        margin-right: 7.5vw;
+    }
+
+
+    .register-link {
+        font-size: 2.5vh;
+    }
+
+    .register-link p {
+        margin-left: 7vw;
+        margin-top: 4.5vh;
+    }
+
+    .register-link a {
+        margin-left: 0.1vw;
+    }
+</style>
+
+<body>
+    <div class="wrapper">
+        <form action="#" id="form">
+            <h1>Login</h1>
+            <div class="input-box">
+                <input type="text" id="username" placeholder="Username">
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" id="password" placeholder="Password">
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+            <div class="remember-forgot">
+                <label><input type="checkbox">Remember me</label>
+                <a href="#">Forgot password</a>
+            </div>
+            <button type="button" class="btn" onclick="login()">Login</button>
+            <div class="register-link">
+                <p>Don't have an account?
+                    <a href="C:\Program Files\Sublime Text 3\Daiz">Register</a>
+                </p>
+            </div>
+        </form>
+    </div>
+</body>
+
+<script>
+    function login() {
+        var email = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+
+        if (email == 'daiz_kristine.kaye19' && password == '@Kaye2004*') {
+
+            alert("Login Successful!");
+            window.location.assign("homepage.html");
+        } else {
+            alert("Login Failed!");
+        }
+    }
+</script>
+</body>
+
+</html>
